@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teamup</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.turbo.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.1/dist/flowbite.min.css" />
+  </head>
+  <body>
+    <main class="container mt-28 px-5 flex ">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </main>
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
